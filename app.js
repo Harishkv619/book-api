@@ -28,7 +28,7 @@ app.get('/books/:id', (req, res) => {
   if (book) {
     res.json(book);
   } else {
-    res.status(404).json({ message: "Book not found" });
+    res.status(404).json({ error: "Book not found" });
   }
 });
 
